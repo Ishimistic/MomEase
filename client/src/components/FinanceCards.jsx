@@ -1,31 +1,31 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { onlineWorkshopData, offlineWorkshopData } from '../data/financeData';
-import './WorkshopCards.css';
+import financeSessionData from '../data/financeData';
+import './FinanceCards.css';
 
-const WorkshopCards = ({ sessionType }) => {
+const FinanceSessionCards = ({ sessionType }) => {
   const navigate = useNavigate();
-  const data = sessionType === 'online' ? onlineWorkshopData : offlineWorkshopData;
+  const data = financeSessionData;
 
   const handleCardClick = (finance) => {
-    navigate('/finance-detail', { state: { finance } });
+    navigate('/finance-session-detail', { state: { finance } });
   };
 
   return (
     <div className="cards-container">
-      {data.map((workshop, index) => (
+      {data.map((finance, index) => (
         <div 
           key={index} 
           className="workshop-card"
-          onClick={() => handleCardClick(workshop)}
+          onClick={() => handleCardClick(finance)}
         >
           <div className="image-container">
             <div className="card-image"></div>
           </div>
           <div className="card-content">
-            <h3 className="card-title">{workshop.title}</h3>
-            <p className="card-date">{workshop.date} | {workshop.time}</p>
-            <p className="card-quote">{workshop.quote}</p>
+            <h3 className="card-title">{finance.title}</h3>
+            <p className="card-date">{finance.date} | {finance.time}</p>
+            <p className="card-quote">{finance.quote}</p>
           </div>
         </div>
       ))}
@@ -33,4 +33,4 @@ const WorkshopCards = ({ sessionType }) => {
   );
 };
 
-export default WorkshopCards;
+export default FinanceSessionCards;

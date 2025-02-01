@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import './WorkshopDetail.css';
+import './FinanceSessionDetails.css';
 
 const FinanceSessionDetail = () => {
   const location = useLocation();

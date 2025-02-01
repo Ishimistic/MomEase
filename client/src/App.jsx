@@ -11,7 +11,10 @@ import BlogInfo from './pages/BlogPage';
 import NetworkingHub from "./pages/NetworkingHub";
 import ComingSoon from "./components/ComingSoon";
 import FAQSection from './components/FAQsection';
-
+import FinanceSessionDetail from './components/FinanceSessionDetails';
+// import LearnFinance from './components/LearnFinance';
+// import FinanceSessionTypes from './components/FinanceSessionTypes';
+import FinanceLearnPage from "./pages/FinanceLearnPage"
 
 
 function App() {
@@ -21,7 +24,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/dashboard" element={<sDashboard />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/workshops" element={<Workshop />} />
         <Route path="/workshop-detail" element={<WorkshopDetail />} />
         <Route path="/finance" element={<FinanceScreen />} />
@@ -29,6 +32,9 @@ function App() {
         <Route path="/networking-hub" element={<NetworkingHub />} />
         <Route path="/coming-soon" element={<ComingSoon />}  />
         <Route path="/faqs" element={<FAQSection />}  />
+        <Route path="/learn-finance" element={<FinanceLearnPage />}  />
+        <Route path="/finance-session-detail" element={<FinanceSessionDetail />}  />
+
       </Routes>
     </Router>
     {/* <FinanceScreen /> */}

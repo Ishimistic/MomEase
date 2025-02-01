@@ -7,7 +7,7 @@ const Workshop = () => {
   return (
     <div className="workshop-wrapper">
       <div className="workshop-container">
-        <Header />
+        <Header title="Workshop"/>
         <SessionTypes />
       </div>
     </div>

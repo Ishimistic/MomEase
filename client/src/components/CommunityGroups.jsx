@@ -4,10 +4,10 @@ import { FaUsers, FaHandHoldingHeart, FaBabyCarriage, FaBriefcase } from 'react-
 import './CommunityGroups.css';
 
 const communityGroups = [
-  { name: 'Local Meetups', icon: <FaUsers />, members: 1250 },
-  { name: 'Co-Parenting Support', icon: <FaHandHoldingHeart />, members: 850 },
-  { name: 'Babysitting Circles', icon: <FaBabyCarriage />, members: 650 },
-  { name: 'Career Support', icon: <FaBriefcase />, members: 920 }
+  { name: 'Local Meetups', icon: <FaUsers style={{ color: '#f874a9' }} />, members: 1250 },
+  { name: 'Co-Parenting Support', icon: <FaHandHoldingHeart style={{ color: '#f874a9' }} />, members: 850 },
+  { name: 'Babysitting Circles', icon: <FaBabyCarriage style={{ color: '#f874a9' }} />, members: 650 },
+  { name: 'Career Support', icon: <FaBriefcase style={{ color: '#f874a9' }} />, members: 920 }
 ];
 
 const CommunityGroups = () => {

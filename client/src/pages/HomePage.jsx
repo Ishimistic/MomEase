@@ -105,6 +105,7 @@ const HomePage = () => {
             </div>
           </div>
           {/* <Bell className="notification-icon" color='black'/> */}
+          <h3>MomEase</h3>
         </header>
 
         {/* Welcome Card */}
@@ -113,7 +114,7 @@ const HomePage = () => {
             <ImageSlider />
           </div>
           <div className="welcome-text">
-            <h4>A step towards yourself</h4>
+            <h4>Nurturing You, So You Can Nurture Them.</h4>
           </div>
         </div>
       </div>

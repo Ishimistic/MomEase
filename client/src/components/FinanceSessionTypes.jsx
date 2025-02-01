@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './FinanaceSessionTypes.css'
-import WorkshopCards from './WorkshopCards';
+import './FinanceSessionTypes.css'
+import FinanceSessionCards from './FinanceCards';
 
 const SessionTypes = () => {
     const [selectedSession, setSelectedSession] = useState(null);
@@ -24,7 +24,7 @@ const SessionTypes = () => {
                     <span className="session-label">Online<br />Sessions</span>
                 </div>
 
-                <div 
+                {/* <div 
                     className={`session-option ${selectedSession === 'offline' ? 'active' : ''}`}
                     onClick={() => handleSessionClick('offline')}
                 >
@@ -34,9 +34,9 @@ const SessionTypes = () => {
                         </svg>
                     </div>
                     <span className="session-label">Offline<br />Meetups</span>
-                </div>
-            </div>
-            {selectedSession && <WorkshopCards sessionType={selectedSession} />}
+                </div>*/}
+            </div> 
+            {selectedSession && <FinanceSessionCards sessionType={selectedSession} />}
         </div>
     );
 };
